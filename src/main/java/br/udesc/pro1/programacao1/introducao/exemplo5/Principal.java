@@ -34,8 +34,19 @@ public class Principal {
         else
             System.out.println("Não é casado");
         
+
+        
+        Pessoa jose = new Pessoa(1981);
+        jose.setNome("Jose");
+        
+        maria.conjuge = jose;
+        
+        
         System.out.println(maria);
         
         System.out.println(joao);
+        
+        System.out.println(jose);
+        
     }
 }

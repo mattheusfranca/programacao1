@@ -13,7 +13,7 @@ public class Pessoa {
     
     //private Pessoa conjuge;
     
-    private Pessoa conjuge;
+    public Pessoa conjuge;
     
     /**
      * Contrutor da classe
@@ -57,6 +57,7 @@ public class Pessoa {
      * @param outraPessoa 
      */
     public void casar(Pessoa outraPessoa){ //this == Maria e OutraPessoa == joao
+    
         if(conjuge == null && outraPessoa != null){
             if(!outraPessoa.ehCasado()){
                 this.conjuge = outraPessoa;
