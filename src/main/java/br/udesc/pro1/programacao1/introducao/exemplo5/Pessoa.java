@@ -68,14 +68,7 @@ public class Pessoa {
     }
     
     
-    /**
-     * Este método apenas atribui o conjuge a uma pessoa
-     * @param outraPessoa 
-     */
-//    public void casar(Pessoa outraPessoa){
-//        conjuge = outraPessoa;
-//    }
-    
+
     
     public boolean ehCasado(){
         if(conjuge == null)

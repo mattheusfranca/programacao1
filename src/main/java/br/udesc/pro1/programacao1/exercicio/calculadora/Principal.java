@@ -20,6 +20,7 @@ public class Principal {
         minhaCalculadora.imprimirValor();
         minhaCalculadora.limparMemoria();
         minhaCalculadora.imprimirValor();
+        
     }
     
 }

@@ -45,9 +45,9 @@ public class Pais {
     }
     
     /**
-     * 
-     * @param fronteira1 país que faz fronteira
-     * @param fronteira2 país que faz fronteira
+     * Este método vai adicionar as fronteiras ao país
+     * @param fronteira1 país que faz fronteira1
+     * @param fronteira2 país que faz fronteira2
      * @return false se houver algum problema para adicionar qualque 1 das duas fronteiras
      */
     public boolean addFronteiras(Pais fronteira1, Pais fronteira2){
