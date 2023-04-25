@@ -17,6 +17,7 @@ public class GaragemArray {
     
     public GaragemArray(){
         carros = new ArrayList();
+        //Adicionando as 10 vagas como null para representar vagas vazias 
         for(int i=0; i<TAM; i++){
             carros.add(null);
         }
@@ -62,6 +63,4 @@ public class GaragemArray {
             System.out.println("Vaga: " + i + " - " + carros.get(i));
         }
     }
-     
-     
 }
