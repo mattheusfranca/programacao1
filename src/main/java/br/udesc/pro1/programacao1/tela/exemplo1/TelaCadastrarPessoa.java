@@ -47,8 +47,6 @@ public class TelaCadastrarPessoa extends javax.swing.JFrame {
         btnCadastrarPessoa = new javax.swing.JButton();
         lbNome = new javax.swing.JLabel();
         lbCPF = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        txtListaPessoas = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -62,10 +60,6 @@ public class TelaCadastrarPessoa extends javax.swing.JFrame {
         lbNome.setText("Nome");
 
         lbCPF.setText("CPF");
-
-        txtListaPessoas.setColumns(20);
-        txtListaPessoas.setRows(5);
-        jScrollPane1.setViewportView(txtListaPessoas);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -83,11 +77,8 @@ public class TelaCadastrarPessoa extends javax.swing.JFrame {
                                 .addComponent(tfNomePessoa, javax.swing.GroupLayout.Alignment.LEADING))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(149, 149, 149)
-                        .addComponent(btnCadastrarPessoa, javax.swing.GroupLayout.PREFERRED_SIZE, 395, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(84, 84, 84)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 558, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(69, Short.MAX_VALUE))
+                        .addComponent(btnCadastrarPessoa, javax.swing.GroupLayout.PREFERRED_SIZE, 395, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(154, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -102,9 +93,7 @@ public class TelaCadastrarPessoa extends javax.swing.JFrame {
                 .addComponent(tfCPF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(58, 58, 58)
                 .addComponent(btnCadastrarPessoa)
-                .addGap(80, 80, 80)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(39, Short.MAX_VALUE))
+                .addContainerGap(36, Short.MAX_VALUE))
         );
 
         pack();
@@ -129,9 +118,7 @@ public class TelaCadastrarPessoa extends javax.swing.JFrame {
         tfNomePessoa.setText("");
         tfCPF.setText("");
         
-        for(Pessoa p: pessoas){
-            txtListaPessoas.append(p.getNome() + "\n");
-        }
+        
         System.out.println(pessoas);
         
         
@@ -141,11 +128,9 @@ public class TelaCadastrarPessoa extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCadastrarPessoa;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lbCPF;
     private javax.swing.JLabel lbNome;
     private javax.swing.JTextField tfCPF;
     private javax.swing.JTextField tfNomePessoa;
-    private javax.swing.JTextArea txtListaPessoas;
     // End of variables declaration//GEN-END:variables
 }

@@ -17,12 +17,15 @@ public class Principal {
         
         Animal cachorro = new Cachorro(); //&123
         cachorro.fala();
+        Cachorro c1 = (Cachorro) cachorro;
+        c1.corre();
 //        cachorro.corre(); Não possíve utilizar o método sem converter para Cachorro
         
 
         //Casting - conversão para Cachorro
         Cachorro cachorroConvertido = (Cachorro) cachorro; //&123
         cachorroConvertido.corre();
+        
         
         Animal gato = new Gato();
         gato.fala();
@@ -44,6 +47,9 @@ public class Principal {
 
         for(Animal a: animais){
             a.fala();
+            if(a instanceof Cachorro){
+                ((Cachorro) a).corre();
+            }
         }
         
         
