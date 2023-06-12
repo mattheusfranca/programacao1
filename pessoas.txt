@@ -1,0 +1,2 @@
+aluno1 nome1 25
+aluno2 sobrenome2 30

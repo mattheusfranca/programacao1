@@ -22,7 +22,17 @@ public class TelaCadastrarAluno extends javax.swing.JFrame {
     public static void excluirAluno(Aluno aluno){
         alunos.remove(aluno);
     }
-            
+         
+    //Dados simulados
+    public static void inicializarBD(){
+        alunos.add(new Aluno("1", "Aluno1", true));
+        alunos.add(new Aluno("2", "Aluno2", true));
+        alunos.add(new Aluno("3", "Aluno3", true));
+        alunos.add(new Aluno("4", "Aluno4", true));
+        alunos.add(new Aluno("5", "Aluno5", true));
+        alunos.add(new Aluno("6", "Aluno6", true));
+        
+    }
     /**
      * Creates new form TelaCadastrarAluno
      */
